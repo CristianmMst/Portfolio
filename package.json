@@ -23,7 +23,6 @@
     "scrollreveal": "^4.0.9"
   },
   "devDependencies": {
-    "@types/scrollreveal": "^0.0.8",
-    "gh-pages": "^5.0.0"
+    "@types/scrollreveal": "^0.0.8"
   }
 }
