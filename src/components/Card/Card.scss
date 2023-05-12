@@ -4,10 +4,8 @@
 .Card {
   margin: 2rem;
   height: 30rem;
-  display: flex;
   padding: 2rem;
-  align-items: center;
-  justify-content: space-around;
+  @include flex(center, space-around);
 
   &-img {
     width: 20rem;

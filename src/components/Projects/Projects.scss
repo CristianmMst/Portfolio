@@ -1,11 +1,11 @@
+@import "../../sass/mixins";
+
 .Projects {
-  display: flex;
   color: white;
   padding-top: 5rem;
   overflow-x: hidden;
-  align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  @include flex(center, space-between);
 }
 
 @media screen and (max-width: 750px) {

@@ -1,16 +1,15 @@
 @import "../../sass/colors";
+@import "../../sass/mixins";
 
 .navbar {
   top: 0;
-  overflow-x: hidden;
   width: 100%;
-  display: flex;
-  position: fixed;
-  color: $tittle-color;
-  align-items: center;
-  justify-content: end;
-  background-color: $bg-primary;
   z-index: 1000;
+  position: fixed;
+  overflow-x: hidden;
+  color: $tittle-color;
+  @include flex(center, end);
+  background-color: $bg-primary;
 
   .nav {
     margin: 0;
@@ -29,22 +28,22 @@
 .item {
   position: relative;
   a {
-    display: block;
     padding: 10px;
-    text-decoration: none;
-    color: $tittle-color;
-    transition: all 0.25s ease-in-out;
+    display: block;
     cursor: pointer;
+    color: $tittle-color;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
 
     &:after {
+      width: 0;
       content: "";
+      height: 5px;
       display: block;
       margin-top: 3px;
-      background-color: $subtittle-color;
-      height: 5px;
-      width: 0;
       border-radius: 0.4rem;
       transition: all 0.5s ease-out;
+      background-color: $subtittle-color;
     }
     &:hover:after {
       width: 100%;

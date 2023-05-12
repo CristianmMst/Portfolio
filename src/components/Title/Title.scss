@@ -2,10 +2,8 @@
 @import "../../sass/mixins";
 
 .Title {
-  display: flex;
-  align-self: center;
+  @include flex();
   flex-direction: column;
-  justify-content: center;
 
   &-text {
     margin: 0 0 0.2rem;

@@ -14,11 +14,9 @@
 
   &-content {
     width: 100%;
-    display: flex;
     padding: 2rem;
     overflow: hidden;
-    align-items: center;
-    justify-content: space-around;
+    @include flex(center, space-around);
 
     &-img {
       width: 50%;

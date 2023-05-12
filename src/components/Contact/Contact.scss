@@ -2,38 +2,27 @@
 @import "../../sass/mixins";
 
 .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 5rem;
-  color: $tittle-color;
-  overflow-x: hidden;
   height: 100vh;
-}
-
-.tittle {
-  @include tittle;
-}
-
-.subline {
-  @include subline;
+  padding-top: 5rem;
+  overflow-x: hidden;
+  color: $tittle-color;
+  flex-direction: column;
+  @include flex(center, space-around);
 }
 
 .formContainer {
   form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     gap: 1.5rem;
+    flex-direction: column;
+    @include flex(space-around);
 
     input {
-      background-color: white;
       border: 0;
       padding: 1rem;
+      font-size: 15px;
       border-radius: 0.3rem;
       transition: all 0.5s ease;
-      font-size: 15px;
+      background-color: white;
 
       &::placeholder {
         text-transform: uppercase;
@@ -46,15 +35,15 @@
     }
 
     textarea {
-      background-color: white;
       border: 0;
+      resize: none;
       padding: 1rem;
+      font-size: 15px;
       border-radius: 0.3rem;
+      background-color: white;
       transition: all 0.5s ease;
       transition: all 0.5s ease;
       border: 2px solid white;
-      resize: none;
-      font-size: 15px;
 
       &::placeholder {
         text-transform: uppercase;
