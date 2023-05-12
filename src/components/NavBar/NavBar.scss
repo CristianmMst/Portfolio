@@ -1,0 +1,102 @@
+@import "../../sass/colors";
+
+.navbar {
+  top: 0;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  color: $tittle-color;
+  align-items: center;
+  justify-content: end;
+  background-color: $bg-primary;
+  z-index: 1000;
+
+  .nav {
+    margin: 0;
+    padding: 17px;
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.item {
+  position: relative;
+  a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: $tittle-color;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      display: block;
+      margin-top: 3px;
+      background-color: $subtittle-color;
+      height: 5px;
+      width: 0;
+      border-radius: 0.4rem;
+      transition: all 0.5s ease-out;
+    }
+    &:hover:after {
+      width: 100%;
+    }
+  }
+}
+
+.active {
+  &::before {
+    content: "";
+    left: 45%;
+    bottom: 8px;
+    width: 8px;
+    display: block;
+    height: 8px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $subtittle-color;
+    transition: all 0.5s ease;
+  }
+
+  &:hover::before {
+    transform: translateX(20px);
+    bottom: 10px;
+    height: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    background-color: $subtittle-color;
+    align-items: center;
+    line-height: 30px;
+    position: fixed;
+    height: 46%;
+    width: 100%;
+    top: -100%;
+    transition: top 1s ease;
+  }
+
+  .menu-mobile {
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .menu-mobile_active {
+    top: 0;
+  }
+
+  .active {
+    color: $bg-primary !important;
+  }
+}

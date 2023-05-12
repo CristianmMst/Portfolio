@@ -1,0 +1,25 @@
+@import "../../sass/colors";
+@import "../../sass/mixins";
+
+.Title {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+
+  &-text {
+    margin: 0 0 0.2rem;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  &-line {
+    width: 80%;
+    height: 0.2rem;
+    border-radius: 2px;
+    align-self: center;
+    justify-self: center;
+    background-color: $tittle-color;
+  }
+}

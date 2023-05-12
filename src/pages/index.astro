@@ -1,0 +1,32 @@
+---
+import "../sass/index.scss";
+import Navbar from "../components/NavBar/NavBar";
+import Header from "../components/Header/Header";
+import About from "../components/About/About";
+import Projects from "../components/Projects/Projects";
+import Skills from "../components/Skills/Skills";
+import Contact from "../components/Contact/Contact";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script src="../js/scrollReveal.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d65958ccd9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portafolio | Cristian Mora</title>
+  </head>
+  <body>
+    <Navbar client:load />
+    <Header client:load />
+    <About />
+    <Projects />
+    <Skills />
+    <Contact client:load />
+  </body>
+</html>
