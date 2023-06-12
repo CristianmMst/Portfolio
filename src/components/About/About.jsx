@@ -10,8 +10,10 @@ const About = () => {
       <div className="About-content">
         <img className="About-content-img" src={foto} alt="CristianMora" />
         <p className="About-content-text">
-          Hola soy Cristian, desarrollador web Full-Stack autónomo. Con
-          experiencia en diseño y desarrollo de aplicaciones web.
+          ¡Hola! Soy Cristian Mora, un desarrollador web apasionado por la
+          creación de sitios y aplicaciones web que brinden una experiencia
+          única al usuario. Proactivo, con ganas de aprender, mejorar cada día y
+          superarme.
         </p>
       </div>
     </Element>

@@ -19,14 +19,14 @@
     @include flex(center, space-around);
 
     &-img {
-      width: 50%;
+      width: 40%;
       padding: 5rem;
       border-radius: 50%;
     }
     &-text {
       margin: 0;
       width: 50%;
-      font-size: 35px;
+      font-size: 30px;
       text-align: initial;
     }
   }
