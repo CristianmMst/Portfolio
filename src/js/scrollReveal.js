@@ -3,25 +3,25 @@ import ScrollReveal from "scrollreveal";
 const sr = ScrollReveal();
 
 const revealLeft = {
-  duration: 2000,
+  duration: 1000,
   origin: "left",
   distance: "200px",
 };
 
 const revealRight = {
-  duration: 2000,
+  duration: 1000,
   origin: "right",
   distance: "200px",
 };
 
 const revealUp = {
-  duration: 2000,
+  duration: 1000,
   origin: "top",
   distance: "100px",
 };
 
 sr.reveal(".Title", {
-  duration: 2000,
+  duration: 1000,
   origin: "bottom",
   distance: "50px",
 });

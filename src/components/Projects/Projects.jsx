@@ -23,7 +23,7 @@ const Projects = () => {
         Utilizando mis habilidades en desarrollo web y mi conocimiento de API,
         construí una interfaz intuitiva y atractiva para que los amantes del
         cine puedan descubrir nuevas películas, obtener detalles específicos y
-        estar al tanto de las últimas tendencias..
+        estar al tanto de las últimas tendencias.
       </Card>
       <Card
         img={appSalud}
@@ -33,11 +33,10 @@ const Projects = () => {
           code: "https://github.com/Ivan18Gauna/app-clinica",
         }}
       >
-        Diseñar y desarrollar una App de perros que incluía: búsquedas,
-        filtrados, ordenamientos y creación.Desarrollar la app usando para el
-        Front React, Redux, CSS puro y Back desarrollado en Node.js con Express.
-        Base de datos en PostgreSQL y Sequelize. Deploy realizado con Heroku y
-        Vercel.
+        En este proyecto, fui responsable del frontend, específicamente en la
+        estilización. Diseñé una interfaz visualmente atractiva y funcional para
+        una página de salud. Me enfoqué en crear estilos responsivos, utilizando
+        técnicas modernas, creando una interfaz intuitiva para los usuarios.
       </Card>
     </Element>
   );
