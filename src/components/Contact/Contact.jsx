@@ -1,8 +1,7 @@
 import "./Contact.scss";
 import { useRef } from "react";
-import { Element } from "react-scroll";
-import { Title } from "../Title/Title";
 import emailJs from "@emailjs/browser";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   const name = useRef();
@@ -15,7 +14,7 @@ const Contact = () => {
       "service_yg3rrup",
       "template_e5wu4pm",
       event.target,
-      "ne0Tt5mezDB9d2EEa"
+      "ne0Tt5mezDB9d2EEa",
     );
     name.current.value = "";
     email.current.value = "";
@@ -23,8 +22,11 @@ const Contact = () => {
   };
 
   return (
-    <Element name="contact" className="contact">
-      <Title>Contactame</Title>
+    <div id="contact" className="contact">
+      <div className="Title_contact">
+        <h1 className="Title-text">Contacto</h1>
+        <div className="Title-line"></div>
+      </div>
       <div className="formContainer">
         <form onSubmit={(event) => handleSubmit(event)}>
           <input
@@ -54,16 +56,13 @@ const Contact = () => {
       </div>
       <div className="redes">
         <a href="https://github.com/CristianmMst" target="_blank">
-          <i className="fa-brands fa-github icon"></i>
+          <FaGithub className="icon"></FaGithub>
         </a>
-        <a
-          href="https://www.linkedin.com/in/cristian-mora-6342a4248/"
-          target="_blank"
-        >
-          <i className="fa-brands fa-linkedin icon"></i>
+        <a href="https://www.linkedin.com/in/cristianmmst/" target="_blank">
+          <FaLinkedin className="icon"></FaLinkedin>
         </a>
       </div>
-    </Element>
+    </div>
   );
 };
 

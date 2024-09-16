@@ -1,11 +1,10 @@
 import "./Header.scss";
 import { Link } from "react-scroll";
-import arrowDown from "/arrowDown.svg";
-import { Element } from "react-scroll/modules";
+import { FaArrowDown } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <Element name="home" className="Header">
+    <div id="home" className="Header">
       <div>
         <h1>
           Mora <br></br> Cristian
@@ -14,10 +13,10 @@ const Header = () => {
       </div>
       <button className="Header-arrow" type="button">
         <Link spy={true} smooth={true} duration={1000} to="about">
-          <img src={arrowDown} alt="arrowDown" />
+          <FaArrowDown className="Header-arrow-icon" size={50} />
         </Link>
       </button>
-    </Element>
+    </div>
   );
 };
 

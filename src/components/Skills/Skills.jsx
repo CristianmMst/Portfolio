@@ -1,25 +1,29 @@
 import "./Skills.scss";
-import { Element } from "react-scroll";
 import { Title } from "../Title/Title";
-
-import redux from "/redux.svg";
-import mongodb from "/mongodb.svg";
-import typescript from "/typescript.svg";
+import { SiRedux, SiMongodb, SiTypescript } from "react-icons/si";
+import {
+  FaJs,
+  FaNpm,
+  FaSass,
+  FaHtml5,
+  FaReact,
+  FaNodeJs,
+} from "react-icons/fa";
 
 const Skills = () => {
   const skills = [
-    { name: "hmtl", icon: <i className="fa-brands fa-html5 icon"></i> },
-    { name: "sass", icon: <i className="fa-brands fa-sass icon"></i> },
-    { name: "react", icon: <i className="fa-brands fa-react icon"></i> },
-    { name: "npm", icon: <i className="fa-brands fa-npm icon"></i> },
-    { name: "redux", icon: <img src={redux} className="icon" /> },
-    { name: "nodejs", icon: <i className="fa-brands fa-node-js icon"></i> },
-    { name: "mongodb", icon: <img src={mongodb} className="icon" /> },
-    { name: "javascript", icon: <i className="fa-brands fa-js icon"></i> },
-    { name: "typescript", icon: <img src={typescript} className="icon" /> },
+    { name: "hmtl", icon: <FaHtml5 className="icon" /> },
+    { name: "sass", icon: <FaSass className="icon" /> },
+    { name: "react", icon: <FaReact className="icon" /> },
+    { name: "npm", icon: <FaNpm className="icon" /> },
+    { name: "redux", icon: <SiRedux className="icon" /> },
+    { name: "nodejs", icon: <FaNodeJs className="icon" /> },
+    { name: "mongodb", icon: <SiMongodb className="icon" /> },
+    { name: "javascript", icon: <FaJs className="icon" /> },
+    { name: "typescript", icon: <SiTypescript className="icon" /> },
   ];
   return (
-    <Element name="skills" className="Skills">
+    <div id="skills" className="Skills">
       <Title>Mis Habilidades</Title>
       <div className="Icons">
         {skills.map((i, index) => {
@@ -35,7 +39,7 @@ const Skills = () => {
           );
         })}
       </div>
-    </Element>
+    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 import "./NavBar.scss";
 import { useState } from "react";
 import { Link } from "react-scroll";
+import { MdMenu } from "react-icons/md";
 
 const NavBar = () => {
   const [active, setActive] = useState(false);
@@ -10,10 +11,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="menu-mobile" onClick={handleClick}>
-        <i
-          className="fa-solid fa-bars"
-          style={{ fontSize: "35px", padding: "10px" }}
-        ></i>
+        <MdMenu size={40} />
       </div>
       <ul className={`nav ${active ? "menu-mobile_active" : ""}`}>
         <li className="item">

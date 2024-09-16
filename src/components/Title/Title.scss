@@ -21,3 +21,8 @@
     background-color: $tittle-color;
   }
 }
+
+.Title_contact {
+  @include flex();
+  flex-direction: column;
+}

@@ -35,16 +35,14 @@
   &-arrow {
     top: 92%;
     left: 48%;
+    padding: 0;
+    color: white;
     border: none;
+    cursor: pointer;
     position: absolute;
     background-color: transparent;
     transform: translate(-50%, -50%);
     animation: arrowDown 1.5s alternate infinite;
-
-    a {
-      display: block;
-      cursor: pointer;
-    }
   }
 }
 

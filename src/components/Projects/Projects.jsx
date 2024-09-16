@@ -1,16 +1,15 @@
 import "./Projects.scss";
-import movieApp from "/MovieApp.svg";
-import appSalud from "/appSalud.svg";
 import { Card } from "../Card/Card";
 import { Title } from "../Title/Title";
-import { Element } from "react-scroll";
+import movieApp from "../../assets/images/MovieApp.svg";
+import appSalud from "../../assets/images/appSalud.svg";
 
 const Projects = () => {
   return (
-    <Element name="projects" className="Projects">
+    <div id="projects" className="Projects">
       <Title>Proyectos</Title>
       <Card
-        img={movieApp}
+        img={movieApp.src}
         name={"MOVIE-APP"}
         links={{
           page: "https://movie-app-cristian.vercel.app",
@@ -26,7 +25,7 @@ const Projects = () => {
         estar al tanto de las últimas tendencias.
       </Card>
       <Card
-        img={appSalud}
+        img={appSalud.src}
         name={"Más Salud"}
         links={{
           page: "https://app-clinica.vercel.app",
@@ -38,7 +37,7 @@ const Projects = () => {
         una página de salud. Me enfoqué en crear estilos responsivos, utilizando
         técnicas modernas, creando una interfaz intuitiva para los usuarios.
       </Card>
-    </Element>
+    </div>
   );
 };
 

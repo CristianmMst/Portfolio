@@ -1,5 +1,4 @@
 import "./Title.scss";
-import React from "react";
 
 export const Title = ({ children }) => {
   return (

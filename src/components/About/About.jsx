@@ -1,14 +1,17 @@
 import "./About.scss";
-import foto from "/Foto.jpg";
-import { Element } from "react-scroll";
 import { Title } from "../Title/Title";
+import profile from "../../assets/images/Foto.jpg";
 
 const About = () => {
   return (
-    <Element name="about" className="About">
+    <div id="about" className="About">
       <Title>Sobre mí</Title>
       <div className="About-content">
-        <img className="About-content-img" src={foto} alt="CristianMora" />
+        <img
+          className="About-content-img"
+          src={profile.src}
+          alt="CristianMora"
+        />
         <p className="About-content-text">
           ¡Hola! Soy Cristian Mora, un desarrollador web apasionado por la
           creación de sitios y aplicaciones web que brinden una experiencia
@@ -16,7 +19,7 @@ const About = () => {
           superarme.
         </p>
       </div>
-    </Element>
+    </div>
   );
 };
 
